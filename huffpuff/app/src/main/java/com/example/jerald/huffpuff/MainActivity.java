@@ -69,10 +69,16 @@ public class MainActivity extends AppCompatActivity
                 startActivity(maintain);
                 break;
             case 6:
+                Intent check = new Intent(getApplicationContext(), Checklist.class);
+                startActivity(check);
                 break;
             case 7:
+                Intent cal = new Intent(getApplicationContext(), Calendar1.class);
+                startActivity(cal);
                 break;
             case 8:
+                Intent support = new Intent(getApplicationContext(), Support.class);
+                startActivity(support);
                 break;
             case 9:
                 Intent about = new Intent(getApplicationContext(), About.class);

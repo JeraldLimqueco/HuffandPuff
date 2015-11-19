@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Huff &amp; Puff</string>
-    <string name="title_section1">Huff &amp; Puff</string>
+    <string name="app_name">Huff \'n Puff</string>
+    <string name="title_section1">Huff \'n Puff</string>
     <string name="title_section2">Cigarette Content</string>
     <string name="title_section3">Effects of Cigarettes</string>
     <string name="title_section4">I Want To Quit</string>
@@ -61,7 +61,13 @@
         <item>Reward Yourself For Being Smoke-Free</item>
         <item>Lean On Someone</item>
     </string-array>
-    
+
+    <string-array name="sh">
+        <item>Search Nearest Hospital on Google Maps</item>
+        <item>Share Via SMS</item>
+        <item>Share Via Facebook</item>
+    </string-array>
+
     <string name="about_content">
 
     Anti-Smoking Awareness App\n\n
@@ -125,5 +131,11 @@
     <string name="title_activity_stay">Stay Upbeat</string>
     <string name="title_activity_reward">Reward Yourself For Being Smoke Free</string>
     <string name="title_activity_lean">Lean On Someone</string>
+    <string name="title_activity_support">Support</string>
+    <string name="title_activity_sms">SMS</string>
+    <string name="title_activity_calendar1">Calendar</string>
+    <string name="title_activity_checklist">Checklist</string>
+    <string name="title_activity_splash1">Huff \'n Puff</string>
+    <string name="title_activity_splash2">Huff \'n Puff</string>
 
 </resources>
