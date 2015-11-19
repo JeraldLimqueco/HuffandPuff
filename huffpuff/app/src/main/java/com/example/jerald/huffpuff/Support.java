@@ -23,20 +23,16 @@ public class Support extends AppCompatActivity {
             {
                 if(position == 0)
                 {
-                    Intent health = new Intent(getApplicationContext(), Health.class);
-                    startActivity(health);
+                    Intent map = new Intent(getApplicationContext(), Health.class);
+                    startActivity(map);
                 }
 
                 else if(position == 1)
                 {
-                    Intent s = new Intent(getApplicationContext(), SMS.class);
-                    startActivity(s);
-                }
-
-                else if(position == 2)
-                {
-                    Intent money = new Intent(getApplicationContext(), Wallet.class);
-                    startActivity(money);
+                    Intent sharing = new Intent(Intent.ACTION_SEND);
+                    sharing.setType("text/plain");
+                    sharing.putExtra(Intent.EXTRA_TEXT, "A Friendly reminder: STOP Smoking and STAY HEALTHY!\n\nI'm using Huff 'n Puff to learn more about how to quit smoking. \n\nhttps://github.com/JeraldLimqueco/HuffandPuff");
+                    startActivity(Intent.createChooser(sharing, "Share using"));
                 }
             }
         };

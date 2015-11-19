@@ -62,7 +62,7 @@ public class Checklist extends Activity {
             String removedItem = pendingGroceryItems.remove(position);
             refreshPage();
             Toast.makeText(getApplicationContext(),
-                    "Item " + removedItem + " is already at hand",
+                    "Item " + removedItem + " is already at the list",
                     Toast.LENGTH_SHORT).show();
         }
     };
@@ -84,7 +84,7 @@ public class Checklist extends Activity {
         public void onItemClick(AdapterView<?> arg0, View arg1, int position,
                                 long id) {
             Toast.makeText(getApplicationContext(),
-                    "You have already this item at hand",
+                    "You already have this on your list",
                     Toast.LENGTH_SHORT).show();
         }
     };
@@ -232,7 +232,7 @@ public class Checklist extends Activity {
 
         final AlertDialog alertDialog = new AlertDialog.Builder(context)
                 .create();
-        alertDialog.setTitle("Grocery Item Option");
+        alertDialog.setTitle("Checklist Option");
         alertDialog.setButton("Delete", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 pendingGroceryItems.remove(pos);
@@ -308,7 +308,7 @@ public class Checklist extends Activity {
 
         final AlertDialog alertDialog = new AlertDialog.Builder(context)
                 .create();
-        alertDialog.setTitle("At Hand Grocery Item Option");
+        alertDialog.setTitle("To Do List");
         alertDialog.setButton("Delete", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 atHandGroceryItems.remove(pos);

@@ -64,8 +64,7 @@
 
     <string-array name="sh">
         <item>Search Nearest Hospital on Google Maps</item>
-        <item>Share Via SMS</item>
-        <item>Share Via Facebook</item>
+        <item>Share </item>
     </string-array>
 
     <string name="about_content">
@@ -132,10 +131,11 @@
     <string name="title_activity_reward">Reward Yourself For Being Smoke Free</string>
     <string name="title_activity_lean">Lean On Someone</string>
     <string name="title_activity_support">Support</string>
-    <string name="title_activity_sms">SMS</string>
+
     <string name="title_activity_calendar1">Calendar</string>
     <string name="title_activity_checklist">Checklist</string>
     <string name="title_activity_splash1">Huff \'n Puff</string>
     <string name="title_activity_splash2">Huff \'n Puff</string>
+
 
 </resources>

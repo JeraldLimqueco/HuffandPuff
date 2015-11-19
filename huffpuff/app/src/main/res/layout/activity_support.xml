@@ -16,19 +16,10 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:id="@+id/imageView30"
-        android:background="@drawable/sms"
+        android:background="@drawable/share"
         android:layout_below="@+id/imageView29"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
-
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:id="@+id/imageView31"
-        android:background="@drawable/fb"
-        android:layout_below="@+id/imageView30"
-        android:layout_toLeftOf="@+id/listViewshare"
-        android:layout_toStartOf="@+id/listViewshare" />
 
     <ListView
         android:layout_width="wrap_content"
