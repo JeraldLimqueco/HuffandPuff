@@ -23,7 +23,7 @@ public class Support extends AppCompatActivity {
             {
                 if(position == 0)
                 {
-                    Intent map = new Intent(getApplicationContext(), Health.class);
+                    Intent map = new Intent(getApplicationContext(), MapsActivity.class);
                     startActivity(map);
                 }
 
