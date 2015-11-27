@@ -28,4 +28,14 @@
         android:entries="@array/sh"
         android:layout_toRightOf="@+id/imageView29"
         android:layout_toEndOf="@+id/imageView29" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView31"
+        android:background="@drawable/scan"
+        android:layout_below="@+id/imageView30"
+        android:layout_toLeftOf="@+id/listViewshare"
+        android:layout_toStartOf="@+id/listViewshare" />
+
 </RelativeLayout>

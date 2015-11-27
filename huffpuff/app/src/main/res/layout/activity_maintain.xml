@@ -35,4 +35,5 @@ Here are 5 tips to help you maintain your smokefree status:"
         android:id="@+id/textView20"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
 </RelativeLayout>

@@ -3,6 +3,7 @@ package com.example.jerald.huffpuff;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
@@ -13,9 +14,17 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
+
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
+
+    TextToSpeech tts;
+    int result;
+    String welcome;
+
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -31,6 +40,15 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        tts = new TextToSpeech(MainActivity.this, new TextToSpeech.OnInitListener()
+        {
+            @Override
+            public void onInit(int status) {
+                if(status == TextToSpeech.SUCCESS)
+                    result = tts.setLanguage(Locale.ENGLISH);
+            }
+        });
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
@@ -73,6 +91,8 @@ public class MainActivity extends AppCompatActivity
                 startActivity(check);
                 break;
             case 7:
+                tts.speak("Are you ready to quit?", TextToSpeech.QUEUE_FLUSH, null);
+                Toast.makeText(getApplicationContext(),"Are you ready to quit?", Toast.LENGTH_SHORT).show();
                 Intent cal = new Intent(getApplicationContext(), Calendar1.class);
                 startActivity(cal);
                 break;
@@ -81,6 +101,8 @@ public class MainActivity extends AppCompatActivity
                 startActivity(support);
                 break;
             case 9:
+                tts.speak("Welcome to Huff and Puff", TextToSpeech.QUEUE_FLUSH, null);
+                Toast.makeText(getApplicationContext(),"Welcome to Huff and Puff", Toast.LENGTH_SHORT).show();
                 Intent about = new Intent(getApplicationContext(), About.class);
                 startActivity(about);
                 break;
@@ -156,6 +178,8 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Intent about = new Intent(getApplicationContext(), About.class);
+            startActivity(about);
             return true;
         }
 

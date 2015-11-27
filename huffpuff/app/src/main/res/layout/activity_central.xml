@@ -7,6 +7,14 @@
     tools:context="com.example.jerald.huffpuff.Central"
     android:background="@drawable/nerve2">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
     <TextView android:text="\tOne of the ingredients in tobacco is a mood-altering drug called nicotine. Nicotine reaches your brain in mere seconds. It’s a central nervous system stimulant, so it makes you feel more energized for a little while. As that effect subsides, you feel tired and crave more.
 Smoking increases risk of macular degeneration, cataracts, and poor eyesight. It can also weaken your sense of taste and sense of smell, so food may become less enjoyable.
 Your body has a stress hormone called corticosterone, which lowers the effects of nicotine. If you’re under a lot of stress, you’ll need more nicotine to get the same effect.
@@ -15,6 +23,6 @@ Physical withdrawal from smoking can impair your cognitive functioning and make 
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true" /></LinearLayout></ScrollView>
 
 </RelativeLayout>

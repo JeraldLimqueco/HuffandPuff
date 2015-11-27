@@ -1,8 +1,9 @@
 package com.example.jerald.huffpuff;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -10,6 +11,9 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 public class Support extends AppCompatActivity {
+
+    TextToSpeech ttb;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +38,12 @@ public class Support extends AppCompatActivity {
                     sharing.putExtra(Intent.EXTRA_TEXT, "A Friendly reminder: STOP Smoking and STAY HEALTHY!\n\nI'm using Huff 'n Puff to learn more about how to quit smoking. \n\nhttps://github.com/JeraldLimqueco/HuffandPuff");
                     startActivity(Intent.createChooser(sharing, "Share using"));
                 }
+                else if(position == 2)
+                {
+                    Intent ocr = new Intent(getApplicationContext(), OCR2.class);
+                    startActivity(ocr);
+                }
+
             }
         };
         ListView listViewE = (ListView) findViewById(R.id.listViewshare);

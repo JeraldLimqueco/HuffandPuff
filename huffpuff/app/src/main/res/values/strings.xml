@@ -64,8 +64,13 @@
 
     <string-array name="sh">
         <item>Search Nearest Hospital on Google Maps</item>
-        <item>Share </item>
+        <item>Share</item>
+        <item>Scan</item>
     </string-array>
+
+    <string name="choose_from_gallery">Choose from gallery</string>
+
+    <string name="take_a_photo">Take a photo</string>
 
     <string name="about_content">
 
@@ -142,5 +147,8 @@
     <string name="no_location_detected">
         No location detected. Make sure location is enabled on the device.
     </string>
+    <string name="title_activity_event">event</string>
+    <string name="title_activity_ocr">OCR</string>
+    <string name="title_activity_ocr2">OCR2</string>
 
 </resources>
